@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 7%; /* Updated to match sidebar width */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    flex-shrink: 0;
+}
+
+.header img {
+    width: 200px;
+    height: auto;
+}
+
+.navigation a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}   
+
+.header-banner {
+    text-align: center;
+    padding: 0;
+    background: url('https://www.zdnet.com/a/img/resize/8b5a12b9b5fd58fd1943604699993f1e6469be19/2023/08/22/71f6e0b9-3405-43ea-972c-202a7c8bf615/best-phones-zdnet-thumb-image.jpg?auto=webp&fit=crop&height=675&width=1200') no-repeat center center;
+    background-size: cover;
+    flex-shrink: 0;
+    height: 200px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #ffffff;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.box {
+    width: 32%;
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: left;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    flex-shrink: 0;
+    font-size: medium;
+    color: bisque;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.sub-banner{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightgrey
+}
+
+.h1{
+    font-weight: bold;
+}
+
+.h2{
+    font-weight: 400;
+    font-size: medium;
+    color: blue;
+}
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type=text], 
+.form-container input[type=email], 
+.form-container input[type=tel], 
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-container input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-container textarea {
+    resize: vertical;
+}

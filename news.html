@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DY PHONE STORE - News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .news-container {
+            padding: 20px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-item h2 {
+            margin-bottom: 10px;
+        }
+        .news-item p {
+            line-height: 1.6;
+        }
+        .read-more {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block" style="width:7%">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="news.html" class="w3-bar-item w3-button">News</a>
+        <a href="videos.html" class="w3-bar-item w3-button">Videos</a>
+        <a href="delivery.html" class="w3-bar-item w3-button">Delivery</a>
+        <a href="locations.html" class="w3-bar-item w3-button">Locations</a>
+    </div>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img width="150" height="40" src="DY PHONE STORE (1).png" alt="DY STORE Logo">
+                </a>
+            </div>
+            <div class="navigation">
+                <a href="index.html"><b>Home</b></a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="header-banner"></div>
+
+        <div class="sub-banner">
+            <p>Latest News</p>
+        </div>
+
+        <div class="news-container">
+            <div class="news-item">
+                <h2>New iPad Pro Released</h2>
+                <p>Apple has unveiled the latest iPad Pro with enhanced performance and a stunning Liquid Retina XDR display. The new iPad Pro comes in two sizes: 11-inch and 12.9-inch, featuring the powerful M2 chip and 5G connectivity.</p>
+                <p class="read-more"><a href="#">Read More</a></p>
+            </div>
+            <div class="news-item">
+                <h2>AirPods Pro 2 Launch Announcement</h2>
+                <p>Get ready for the next generation of AirPods Pro with improved sound quality and noise cancellation features. Apple has teased a special event next month to unveil the AirPods Pro 2 alongside new iPad models.</p>
+                <p class="read-more"><a href="#">Read More</a></p>
+            </div>
+            <div class="news-item">
+                <h2>MacBook Pro 2024 Updates</h2>
+                <p>Discover the latest MacBook Pro models featuring the powerful M2 chip and redesigned form factors. The new MacBook Pro models offer up to 64GB of unified memory and a range of storage options, catering to professionals.</p>
+                <p class="read-more"><a href="#">Read More</a></p>
+            </div>
+            <div class="news-item">
+                <h2>iMac Redesign Rumors</h2>
+                <p>Rumors suggest Apple is planning a major redesign for the iMac lineup, expected to launch in late 2024. The new iMacs may feature Apple's next-generation silicon, offering significant performance improvements.</p>
+                <p class="read-more"><a href="#">Read More</a></p>
+            </div>
+        </div>
+
+        <div class="footer" style="margin-top: 20px;">
+            <img width="150" height="60" src="DY PHONE STORE (1).png" alt="DY STORE Logo">
+            <p><i>© 2024 Dy Phone Store<br>Terrence Phillip Dy<br>terrencephillipdy@example.com<br>Padre Paredes St, Sampaloc, Manila, 1015 Metro Manila</i></p>
+        </div>
+    </div>
+
+    <script>
+        const readMoreLinks = document.querySelectorAll('.read-more a');
+        readMoreLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('Implement your Read More functionality here.');
+            });
+        });
+    </script>
+</body>
+</html>
